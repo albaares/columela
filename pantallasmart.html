@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Pantalla Digital Smartboard MX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8; /* Fondo blanco */
+            color: #1a202c; /* Texto oscuro */
+        }
+        .container-content {
+            padding-top: 6rem; /* Ajuste para el header fijo */
+        }
+        .section-details summary {
+            cursor: pointer;
+            list-style: none;
+        }
+        .section-details summary::-webkit-details-marker {
+            display: none;
+        }
+        .section-details summary::after {
+            content: '+';
+            font-weight: bold;
+            float: right;
+            transition: transform 0.3s ease;
+            color: #FBBB0E; /* Color amarillo para el icono */
+        }
+        .section-details[open] summary::after {
+            content: '-';
+            transform: rotate(360deg);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .scroll-mt-24 {
+            scroll-margin-top: 6rem;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F8F8] text-gray-800">
+
+    <!-- Sticky Header para Navegación -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#38A5DD] bg-opacity-90 backdrop-blur-md shadow-lg p-4">
+        <nav class="flex justify-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base">
+            <a href="#primeros-pasos" class="text-white hover:text-[#FBBB0E] transition-colors duration-200 p-2 rounded-md font-semibold">Primeros pasos</a>
+            <a href="#sistema-iq4" class="text-white hover:text-[#FBBB0E] transition-colors duration-200 p-2 rounded-md font-semibold">Sistema iQ4</a>
+            <a href="#funciones-avanzadas" class="text-white hover:text-[#FBBB0E] transition-colors duration-200 p-2 rounded-md font-semibold">Funciones avanzadas</a>
+            <a href="#smart-ink" class="text-white hover:text-[#FBBB0E] transition-colors duration-200 p-2 rounded-md font-semibold">Smart Ink</a>
+            <a href="#gestion-apps" class="text-white hover:text-[#FBBB0E] transition-colors duration-200 p-2 rounded-md font-semibold">Gestión de apps</a>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container-content max-w-5xl mx-auto p-4 sm:p-8">
+        <section class="text-center mb-12">
+            <br><br>
+            
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700">Pantalla Digital Smartboard MX v5</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+                Una guía interactiva para transformar tu aula. Este tutorial te guiará a través de sus funciones esenciales y te ofrecerá recursos para explorar todo su potencial.
+            </p>
+        </section>
+
+        
+
+        <!-- Sección 1: Primeros Pasos -->
+        <details id="primeros-pasos" class="section-details bg-white p-6 rounded-3xl shadow-xl mb-8 scroll-mt-24">
+            <summary class="text-2xl font-bold text-[#38A5DD] transition-colors duration-200 hover:text-[#FBBB0E] p-2 rounded-lg">
+                Sección 1: Primeros pasos – lo básico y esencial
+            </summary>
+            <div class="mt-4 p-4 rounded-xl animate-fade-in bg-gray-100">
+                <h4 class="text-xl font-semibold mb-2 text-gray-800">1.1 Encendido y apagado</h4>
+                <p>Existen dos modos principales para encender y apagar el panel:</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                    <li>
+                        <strong class="text-gray-800">Encendido y apagado rápido (modo standby):</strong>
+                        <ul class="list-circle list-inside ml-4">
+                            <li><strong class="text-gray-700">Uso diario recomendado.</strong> Presiona el <strong class="text-gray-800">botón de encendido frontal</strong>.</li>
+                            <li>Cuando lo presionas una vez, el panel entra en <strong class="text-gray-800">modo standby</strong>, y al volver a presionarlo, se reactiva casi instantáneamente.</li>
+                        </ul>
+                    </li>
+                    <li class="mt-4">
+                        <strong class="text-gray-800">Encendido y apagado completo (desde cero):</strong>
+                        <ul class="list-circle list-inside ml-4">
+                            <li>Para encenderlo desde cero, busca el <strong class="text-gray-800">interruptor físico "click-clack"</strong> en la parte trasera inferior.</li>
+                            <li>Para apagarlo completamente de forma correcta: Desliza el dedo hacia abajo desde la parte superior de la pantalla para ver el icono de encendido/apagado y selecciona "Apagar".</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">1.2 Componentes principales del hardware</h4>
+                <p class="text-gray-600">La Smartboard MX v5 tiene una botonera intuitiva en la parte frontal y accesorios útiles:</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                    <li><strong class="text-gray-800">Botón de encendido/apagado rápido:</strong> Para uso diario.</li>
+                    <li><strong class="text-gray-800">Control de volumen:</strong> Para subir y bajar el volumen.</li>
+                    <li><strong class="text-gray-800">Botón de pausa (congelar pantalla):</strong> Congela la imagen de un dispositivo externo.</li>
+                    <li><strong class="text-gray-800">Botón de persiana:</strong> Oscurece la pantalla.</li>
+                    <li><strong class="text-gray-800">Botón de selección de fuente:</strong> Permite elegir qué dispositivo visualizar.</li>
+                    <li><strong class="text-gray-800">Punteros:</strong> Incluye dos punteros pasivos.</li>
+                    <li><strong class="text-gray-800">Botón de inicio:</strong> Vuelve a la pantalla principal del sistema iQ.</li>
+                    <li><strong class="text-gray-800">Lector NFC:</strong> Permite iniciar sesión rápidamente con una tarjeta.</li>
+                    <li><strong class="text-gray-800">Set de micrófonos:</strong> Con cancelación de eco acústico.</li>
+                </ul>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">1.3 Conectando tu ordenador (con cable)</h4>
+                <p class="text-gray-600">Puedes conectar tu ordenador para proyectar y controlarlo desde el panel.</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                    <li>
+                        <strong class="text-gray-800">Conexión por HDMI y USB:</strong> Necesitas un cable HDMI y un cable USB-B a USB-A. El HDMI transmite vídeo y audio, y el USB la tactilidad.
+                    </li>
+                    <li>
+                        <strong class="text-gray-800">Conexión por USB-C:</strong> Un solo cable para vídeo, audio, datos (tactilidad) y carga de tu portátil. ¡Todo en uno!
+                    </li>
+                </ul>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">1.4 Compartir pantalla de forma inalámbrica (SMART Mirror)</h4>
+                <p class="text-gray-600">Envía el contenido de cualquier dispositivo de forma inalámbrica al panel.</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                    <li>
+                        <strong class="text-gray-800">Compartir de forma nativa:</strong> Usa AirPlay, Google Cast o Miracast si los dispositivos están en la misma red Wi-Fi.
+                    </li>
+                    <li>
+                        <strong class="text-gray-800">Compartir con la aplicación Smart Mirror:</strong> Para dispositivos que no están en la misma red, usa la aplicación o la web <a href="http://smartmirror.link" target="_blank" class="text-[#FBBB0E] hover:underline">smartmirror.link</a> y un ID de sesión.
+                    </li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- Sección 2: Sistema iQ4 -->
+        <details id="sistema-iq4" class="section-details bg-white p-6 rounded-3xl shadow-xl mb-8 scroll-mt-24">
+            <summary class="text-2xl font-bold text-[#38A5DD] transition-colors duration-200 hover:text-[#FBBB0E] p-2 rounded-lg">
+                Sección 2: Usando el sistema integrado iQ4
+            </summary>
+            <div class="mt-4 p-4 rounded-xl animate-fade-in bg-gray-100">
+                <h4 class="text-xl font-semibold mb-2 text-gray-800">2.1 ¿Qué es iQ4?</h4>
+                <p class="text-gray-600">Es un <strong class="text-gray-800">sistema operativo embebido</strong> basado en Android que permite al panel funcionar de forma independiente, listo para usar nada más encenderlo. Cuenta con certificación Etla de Google.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">2.2 Inicio de sesión y personalización</h4>
+                <p class="text-gray-600">Iniciar sesión te ofrece grandes ventajas al <strong class="text-gray-800">personalizar tu entorno de trabajo</strong> y hacer que tus contenidos sean portátiles y seguros.</p>
+                <p class="mt-2 text-gray-600"><strong class="text-gray-800">Cómo iniciar sesión (método recomendado y seguro):</strong> Escanea el <strong class="text-gray-800">código QR</strong> con tu dispositivo para autenticarte con tu cuenta de Google o Office 365, sin exponer tu contraseña en la pantalla.</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">2.3 La pizarra blanca (tu lienzo digital)</h4>
+                <p class="text-gray-600">Una de las aplicaciones más utilizadas. Permite hasta <strong class="text-gray-800">40 toques simultáneos</strong> y ofrece herramientas avanzadas:</p>
+                <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+                    <li><strong class="text-gray-800">Uso básico:</strong> Escribe con el puntero, mueve objetos con el dedo y borra con la palma.</li>
+                    <li><strong class="text-gray-800">Gestión de páginas:</strong> Añade páginas o usa plantillas estáticas y dinámicas.</li>
+                    <li><strong class="text-gray-800">Herramientas de edición:</strong> Lápiz, reconocimiento de texto y zoom.</li>
+                    <li><strong class="text-gray-800">Añadir contenido:</strong> Inserta imágenes <strong class="text-gray-800">Creative Commons</strong> y reproduce vídeos de YouTube <strong class="text-gray-800">sin publicidad</strong> directamente desde la pizarra.</li>
+                </ul>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">2.4 Grabación de pantalla (iQ4)</h4>
+                <p class="text-gray-600">Graba lo que ocurre en la pantalla, incluyendo tu voz y el audio. Accede desde el icono de la caja de herramientas. Los vídeos se guardan automáticamente en la carpeta "Vídeos" de la sección "Archivos".</p>
+
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">2.5 Gestión de archivos</h4>
+                <p class="text-gray-600">El sistema guarda automáticamente tu trabajo, especialmente si has iniciado sesión, asociándolo a tu cuenta.</p>
+            </div>
+        </details>
+
+        <!-- Sección 3: Funciones Avanzadas -->
+        <details id="funciones-avanzadas" class="section-details bg-white p-6 rounded-3xl shadow-xl mb-8 scroll-mt-24">
+            <summary class="text-2xl font-bold text-[#38A5DD] transition-colors duration-200 hover:text-[#FBBB0E] p-2 rounded-lg">
+                Sección 3: Funciones avanzadas y colaboración
+            </summary>
+            <div class="mt-4 p-4 rounded-xl animate-fade-in bg-gray-100">
+                <h4 class="text-xl font-semibold mb-2 text-gray-800">3.1 Pantalla dividida (multitarea)</h4>
+                <p class="text-gray-600">Usa dos aplicaciones al mismo tiempo. Haz clic en el icono de cuadrado con dos rayas laterales y arrastra la aplicación para dividir la pantalla. Puedes redimensionar las ventanas.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">3.2 Compartir contenido con los estudiantes</h4>
+                <p class="text-gray-600">Comparte el contenido de tu pizarra con los dispositivos de tus estudiantes y permite que interactúen. Pídeles que visiten <a href="http://www.hellosmarte.com" target="_blank" class="text-[#FBBB0E] hover:underline">www.hellosmarte.com</a> o que escaneen el código QR.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">3.3 Herramientas matemáticas</h4>
+                <p class="text-gray-600">La pizarra incluye una <strong class="text-gray-800">regla</strong> y un <strong class="text-gray-800">compás</strong>. Accede a ellas desde el icono de los tres puntos en la barra de herramientas de la pizarra.</p>
+            </div>
+        </details>
+
+        <!-- Sección 4: Smart Ink -->
+        <details id="smart-ink" class="section-details bg-white p-6 rounded-3xl shadow-xl mb-8 scroll-mt-24">
+            <summary class="text-2xl font-bold text-[#38A5DD] transition-colors duration-200 hover:text-[#FBBB0E] p-2 rounded-lg">
+                Sección 4: Optimizando la experiencia con Smart Ink
+            </summary>
+            <div class="mt-4 p-4 rounded-xl animate-fade-in bg-gray-100">
+                <h4 class="text-xl font-semibold mb-2 text-gray-800">4.1 ¿Qué es Smart Ink?</h4>
+                <p class="text-gray-600">Es un software que permite que tu puntero o tu dedo actúen como un <strong class="text-gray-800">rotulador inteligente</strong> en cualquier aplicación de tu ordenador, permitiendo hacer anotaciones y resaltar contenido.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">4.2 Instalación de Smart Ink</h4>
+                <p class="text-gray-600">Descarga e instala el software <strong class="text-gray-800">Smart Notebook</strong> desde <a href="http://smarttech.com" target="_blank" class="text-[#FBBB0E] hover:underline">smarttech.com</a>. Una vez instalado, verás un icono azul flotando cuando el ordenador esté conectado al panel.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">4.3 Uso en cualquier aplicación</h4>
+                <p class="text-gray-600">Con Smart Ink, puedes escribir y anotar en documentos, presentaciones, explorador de archivos y páginas web, con una experiencia muy integrada.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">4.4 Herramientas avanzadas de Smart Ink</h4>
+                <p class="text-gray-600">El icono azul flotante te da acceso a un "baúl de herramientas" con diversas opciones como lupa, captura de pantalla, rotulador mágico y más.</p>
+                
+                <h4 class="text-xl font-semibold mt-6 mb-2 text-gray-800">4.5 Grabadora Smart</h4>
+                <p class="text-gray-600">Crea vídeos tutoriales grabando todo lo que ocurre en tu escritorio. Accede desde el icono de Smart Notebook en la barra de tareas.</p>
+            </div>
+        </details>
+
+        <!-- Sección 5: Gestión de Apps -->
+        <details id="gestion-apps" class="section-details bg-white p-6 rounded-3xl shadow-xl mb-8 scroll-mt-24">
+            <summary class="text-2xl font-bold text-[#38A5DD] transition-colors duration-200 hover:text-[#FBBB0E] p-2 rounded-lg">
+                Sección 5: Gestión de aplicaciones (iQ4)
+            </summary>
+            <div class="mt-4 p-4 rounded-xl animate-fade-in bg-gray-100">
+                <h4 class="text-xl font-semibold mb-2 text-gray-800">5.1 Instalación de aplicaciones</h4>
+                <p class="text-gray-600">Puedes instalar aplicaciones desde Google Play Store de forma segura. El método recomendado es:</p>
+                <ol class="list-decimal list-inside mt-2 space-y-2 text-gray-600">
+                    <li><strong class="text-gray-800">Primero inicia sesión en el sistema iQ4</strong> con tu cuenta de Smart.</li>
+                    <li>Luego, accede a <strong class="text-gray-800">Google Play Store</strong>. No te pedirá iniciar sesión de nuevo porque ya estás autenticado bajo tu perfil Smart.</li>
+                    <li>Recuerda <strong class="text-gray-800">cerrar sesión</strong> al finalizar para proteger tus credenciales.</li>
+                </ol>
+            </div>
+        </details>
+    </main>
+
+</body>
+</html>
