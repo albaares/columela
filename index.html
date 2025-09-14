@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Tutoriales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8;
+            color: #1a202c;
+        }
+        .container-content {
+            padding-top: 2rem; /* Espaciado ajustado para el contenido */
+        }
+        .scroll-mt-24 {
+            scroll-margin-top: 6rem;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F8F8] text-gray-800">
+
+    <!-- El encabezado de navegación fijo ha sido eliminado. -->
+
+    <!-- Contenido Principal -->
+    <main class="container-content max-w-5xl mx-auto p-4 sm:p-8 text-center">
+        <section class="mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-2 text-[#FBBB0E]">Biblioteca de Tutoriales</h1>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700">IES Columela</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+                Te doy la bienvenida a nuestra biblioteca de recursos. Aquí encontrarás guías y manuales para aprovechar al máximo las herramientas digitales de nuestro centro.
+            </p>
+        </section>
+        
+        <!-- Sección de listado de tutoriales -->
+        <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="tutorial_migracion_moodle.html" class="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-[#38A5DD] mb-2">Tutorial de Migración de Aulas en Moodle Centros</h3>
+                <p class="text-gray-600">
+                    Guía rápida para hacer copias de seguridad de tus cursos del curso pasado y restaurarlos en los de este.
+                </p>
+            </a>
+
+            <a href="tutorial_smartboard.html" class="bg-white p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-[#38A5DD] mb-2">Tutorial Pantalla Digital Smartboard MX</h3>
+                <p class="text-gray-600">
+                    Aprende a usar todas las funciones de la pantalla interactiva, desde lo básico hasta lo avanzado.
+                </p>
+            </a>
+            
+            
+        </section>
+    </main>
+    
+    <!-- Pie de página (footer) añadido -->
+    <footer class="text-center py-4 mt-12 text-gray-500">
+        <p>Alba Fernández - IES Columela</p>
+    </footer>
+
+</body>
+</html>
